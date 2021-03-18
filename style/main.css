@@ -30,9 +30,7 @@ header .container {
 
 header .logo {
     margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
+    margin-top: 5px;
 }
 
 header nav a {
@@ -50,13 +48,14 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/capa-soa.jpg');
+    /*background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/capa-soa.jpg');*/
     height: 55vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    overflow-y: hidden;
 }
 
 .filme-principal .descricao {
@@ -69,6 +68,16 @@ header nav a:hover {
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
+#video-background {
+      position: absolute;
+      right: 0; 
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      width: auto; 
+      height: auto;
+      z-index: -100;
+    }
 
 .botao {
     background-color: rgba(0, 0, 0, .50);
